@@ -10,9 +10,9 @@ class UsersList extends React.Component {
     filterText: '',
   }
   
-  onChange = (newFilter) => {
+  onChange = (event) => {
     this.setState({
-      filterText: newFilter,
+      filterText: event.target.value,
     })
   }
 
